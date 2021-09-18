@@ -20,3 +20,13 @@ jobs:
       - run: bash ${{ github.workspace }}/hello.sh
       - run: echo "secret hello = ${{ secrets.HELLO }} "
       - run: echo "🍏 This job's status is ${{ job.status }}."
+  test-job2"
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+      - run: echo "i'm 第二个job"
+      - run: echo "🍏 This job's status is ${{ job.status }}."
