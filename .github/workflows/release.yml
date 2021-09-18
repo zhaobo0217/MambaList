@@ -12,7 +12,6 @@ jobs:
           path: MambaList
       - name: run tesh sh
         run: |
-          cd ${{ github.workspace }}/MambaList
 	  echo "publish"
      outputs:
        job-status: success
