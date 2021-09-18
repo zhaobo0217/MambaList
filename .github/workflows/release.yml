@@ -20,7 +20,7 @@ jobs:
       - run: bash ${{ github.workspace }}/hello.sh
       - run: echo "secret hello = ${{ secrets.HELLO }} "
       - run: echo "🍏 This job's status is ${{ job.status }}."
-  test-job2"
+  test-job2:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
