@@ -13,6 +13,6 @@ jobs:
       - name: run tesh sh
         run: |
           cd ${{ github.workspace }}/MambaList
-	  bash hello.sh
+	  echo "publish"
      outputs:
        job-status: success
