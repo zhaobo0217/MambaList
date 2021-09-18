@@ -18,4 +18,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: bash ${{ github.workspace }}/hello.sh
+      - run: echo "secret hello = ${{ secrets.HELLO }} "
       - run: echo "🍏 This job's status is ${{ job.status }}."
